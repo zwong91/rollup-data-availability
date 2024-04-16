@@ -1,0 +1,114 @@
+{
+	"files": [
+		{
+			"path": "op-stack/openrpc/types/blob/blob.go",
+			"bookmarks": [
+				{
+					"line": 96,
+					"column": 1,
+					"label": "Blob DTO"
+				}
+			]
+		},
+		{
+			"path": "op-stack/openrpc/types/blob/commitment.go",
+			"bookmarks": [
+				{
+					"line": 17,
+					"column": 20,
+					"label": "Create Blob commitment"
+				}
+			]
+		},
+		{
+			"path": "op-stack/optimism/op-node/rollup/derive/calldata_source.go",
+			"bookmarks": [
+				{
+					"line": 125,
+					"column": 17,
+					"label": "Decode EVM data"
+				}
+			]
+		},
+		{
+			"path": "op-stack/optimism/op-service/txmgr/txmgr.go",
+			"bookmarks": [
+				{
+					"line": 214,
+					"column": 26,
+					"label": "Send blob"
+				}
+			]
+		},
+		{
+			"path": "contracts/blob-store/src/lib.rs",
+			"bookmarks": [
+				{
+					"line": 14,
+					"column": 19,
+					"label": "Blob store contract"
+				}
+			]
+		},
+		{
+			"path": "op-stack/optimism-rs/src/driver/mod.rs",
+			"bookmarks": [
+				{
+					"line": 262,
+					"column": 20,
+					"label": "Decode EVM tx state"
+				},
+				{
+					"line": 270,
+					"column": 19,
+					"label": "From Decoded transactions"
+				}
+			]
+		},
+		{
+			"path": "op-stack/optimism-rs/src/l1/mod.rs",
+			"bookmarks": [
+				{
+					"line": 427,
+					"column": 11,
+					"label": "New L1Info from block"
+				},
+				{
+					"line": 467,
+					"column": 11,
+					"label": "Filter tx data from evm"
+				}
+			]
+		},
+		{
+			"path": "op-stack/optimism-rs/src/derive/stages/batcher_transactions.rs",
+			"bookmarks": [
+				{
+					"line": 20,
+					"column": 9,
+					"label": "Batcher Tx iterator"
+				},
+				{
+					"line": 46,
+					"column": 49,
+					"label": "Creating Batcher FrameData"
+				},
+				{
+					"line": 59,
+					"column": 30,
+					"label": ""
+				}
+			]
+		},
+		{
+			"path": "op-stack/optimism/op-node/rollup/derive/channel_bank.go",
+			"bookmarks": [
+				{
+					"line": 141,
+					"column": 26,
+					"label": "Frame iterator"
+				}
+			]
+		}
+	]
+}
