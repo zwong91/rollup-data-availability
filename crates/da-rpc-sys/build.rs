@@ -1,6 +1,12 @@
 use std::{env, path::PathBuf};
 
 fn main() {
+    // Apple Silicon架构下需要链接SystemConfiguration和Security库
+    if cfg!(target_os = "aarch64") {
+        println!("cargo:rustc-link-lib=framework=SystemConfiguration");
+        println!("cargo:rustc-link-lib=framework=Security");
+    }
+
     let crate_dir = env::var("CARGO_MANIFEST_DIR").unwrap();
     let crate_name = env::var("CARGO_PKG_NAME").unwrap();
     #[allow(clippy::single_char_pattern)] // False positive
@@ -14,11 +20,6 @@ fn main() {
         Ok(path) => path,
         Err(_) => panic!("cbindgen not found in path"),
     };
-
-    if cfg!(target_os = "macos") {
-        println!("cargo:rustc-link-lib=framework=SystemConfiguration");
-        println!("cargo:rustc-link-lib=framework=Security");
-    }
 
     let mut config: cbindgen::Config = Default::default();
     config.language = cbindgen::Language::C;
