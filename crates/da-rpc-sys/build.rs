@@ -15,6 +15,11 @@ fn main() {
         Err(_) => panic!("cbindgen not found in path"),
     };
 
+    if cfg!(target_os = "macos") {
+        println!("cargo:rustc-link-lib=framework=SystemConfiguration");
+        println!("cargo:rustc-link-lib=framework=Security");
+    }
+
     let mut config: cbindgen::Config = Default::default();
     config.language = cbindgen::Language::C;
     config.parse.parse_deps = true;

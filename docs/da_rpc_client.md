@@ -95,4 +95,3 @@ class L1 {
 }
 L1 >-- GoRollup : post frameRef with commitments
 ```
-

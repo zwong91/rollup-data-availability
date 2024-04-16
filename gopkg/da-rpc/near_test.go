@@ -50,7 +50,7 @@ func TestFrameRefUnmarshalBinary(t *testing.T) {
 }
 
 func TestNewConfig(t *testing.T) {
-	config, err := near.NewConfig("account", "contract", "key", "Testnet", 1)
+	config, err := near.NewConfig("account", "contract", "key", "testnet", 1)
 	if err != nil {
 		t.Error(err)
 	}
@@ -78,7 +78,7 @@ func TestNewConfigFile(t *testing.T) {
 }
 
 func TestFreeClient(t *testing.T) {
-	config, _ := near.NewConfig("account", "contract", "key", "Testnet", 1)
+	config, _ := near.NewConfig("account", "contract", "key", "testnet", 1)
 	config.FreeClient()
 }
 
